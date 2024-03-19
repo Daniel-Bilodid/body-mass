@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hero from "./components/hero/Hero";
+import Meaning from "./components/meaning/Meaning";
+import Eating from "./components/eating/Eating";
+import Limitation from "./components/limitation/Limitation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero></Hero>
+      {/* <Meaning></Meaning>
+      <Eating></Eating>
+      <Limitation></Limitation> */}
     </div>
   );
 }

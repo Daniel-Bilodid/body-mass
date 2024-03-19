@@ -1,0 +1,101 @@
+@import '../../variables';
+
+
+.limitation {
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        
+        margin-top: 120px;
+    }
+    &__adv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title {
+            width: 342px;
+            
+            color: var(--Gunmetal, #253347);
+            /* Heading L */
+            font-family: &inter;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            
+            letter-spacing: -2.4px;
+        }
+        &-text {
+            width: 564px;
+            height: 96px;
+            color: var(--Dark-Electric-Blue, #5E6E85);
+            /* Body M */
+            font-family: $inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            text-align: left;
+        }
+    }
+    &__card {
+        width: 365px;
+        height: 232px;
+        
+
+        border-radius: 16px;
+        background: var(--Pure-White, #FFF);
+        box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+        &-wrapper {
+            padding-top: 32px;
+            padding-left: 32px;
+            width: 98px;
+        }
+        &-wrapper span {
+            color: var(--Gunmetal, #253347);
+            padding-bottom: 10px;
+            /* Heading S */
+            font-family: $inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -1px;
+        }
+        &-text {
+            width: 301px;
+            height: 120px;
+            color: var(--Dark-Electric-Blue, #5E6E85);
+
+            /* Body M */
+            padding-left: 32px;
+            padding-top: 16px;
+            font-family: $inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            text-align: left;
+        }
+    }
+    &__holder {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 32px;
+        margin-left: 140px;
+    }
+    &__vector {
+        width: 100px;
+        margin-left: 138px;
+    }
+    &__footer {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer {
+    margin-right: 32px;
+}
+

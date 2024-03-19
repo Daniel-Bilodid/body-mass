@@ -1,0 +1,50 @@
+@import '../../variables';
+
+.meaning {
+
+
+
+    &__vector {
+        position: absolute;
+        right: 16%;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__img {
+        margin-left: 140px;
+        margin-top: 65px;
+        width: 564px;
+        height: 533px;
+    }
+    &__info {
+        margin-left: 131px;
+        &-title {
+            margin-top: 249px;
+            width: 465px;
+            height: 100px;
+            text-align: left;
+            color: var(--gunmetal, #253347);
+            /* Heading L */
+            font-family: $inter;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 52.8px */
+            letter-spacing: -2.4px;
+        }
+        &-text {
+            width: 465px;
+            height: 168px;
+            margin-top: 35px;
+            color: var(--dark-electric-blue, #5E6E85);
+            /* Body M */
+            font-family: $inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            text-align: left;
+        }
+    }
+}

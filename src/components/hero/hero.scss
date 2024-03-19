@@ -1,0 +1,405 @@
+@import '../../variables';
+
+.hero {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    &__logo{
+        display: flex;
+        justify-content: left;
+        margin-left: 140px;
+        margin-top: 75px;
+    }
+    &__container {
+       
+        width: 64%;
+        height: 737px;
+        border-radius: 0px 0px 35px 35px;
+        background: var(--gradient-1, linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%));
+        margin-left: 24px;
+        margin-top: 1px;
+    }
+    &__calculator {
+       position: absolute;
+       right: 15.36%;
+        width: 100vw;
+        width: 564px;
+        height: 484px;
+        border-radius: 16px;
+        background: var(--pure-white, #FFF);
+        box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+
+        &-wrapper {
+            
+        }
+
+        &-name {
+            display: flex;
+            color: var(--gunmetal, #253347);
+            /* Heading M */
+            font-family: $inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -1.2px;
+            margin-left: 32px;
+            margin-top: 32px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        
+    }
+    &__sub {
+        color: var(--gunmetal, #253347);
+        /* Heading XL */
+        font-family: $inter;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 70.4px */
+        letter-spacing: -3.2px;
+        text-align: left;
+        margin-left: 140px;
+        margin-top: 127px;
+        width: 470px;
+       
+    }
+    &__text {
+        color: var(--dark-electric-blue, #5E6E85);
+        /* Body M */
+        font-family: $inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        width: 465px;
+        text-align: left;
+        margin-left: 140px;
+        margin-top: 35px;
+    }
+}
+.checkbox__metric {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.checkbox__metric span {
+    color: var(--gunmetal, #253347);
+    /* Body M (Bold) */
+    font-family: $inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+.metric {
+    margin-right: 123px;
+}
+
+.inputBmi {
+    width: 238px;
+    height: 98px;
+    &__wrapper {
+        display: flex;
+    }
+    &__height input {
+        border-radius: 12px;
+        border: 1px solid #D8E2E7;
+        background: var(--pure-white, #FFF);
+        padding: 20px 24px;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+    &__height {
+        margin-left: 32px;
+        margin-right: 24px;
+        &-text {
+            margin-top: 32px;
+            width: 44px;
+            height: 21px;
+            color: #5E6E85;
+            /* Body S */
+            font-family: $inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+        }
+    
+    }
+
+    &__weight input {
+        border-radius: 12px;
+        border: 1px solid #D8E2E7;
+        background: var(--pure-white, #FFF);
+        padding: 20px 24px;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+    &__weight {
+        &-text {
+            margin-top: 32px;
+            width: 44px;
+            height: 21px;
+            color: #5E6E85;
+            /* Body S */
+            font-family: $inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+        }
+    }
+    
+}
+
+.bmiResult {
+    margin-top: 62px;
+    margin-left: 32px;
+    width: 450px;
+    height: 100px;
+    border-radius: 16px 999px 999px 16px;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    &__wrapper {
+        display: flex;
+    }
+    &__title {
+        width: 206px;
+        height: 102px;
+        color: var(--pure-white, #FFF);
+        /* Body M (Bold) */
+        font-family: $inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        text-align: left;
+    }
+    &__title span {
+        color: var(--pure-white, #FFF);
+        /* Heading XL */
+        font-family: $inter;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 70.4px */
+        letter-spacing: -3.2px;
+    }
+
+    &__text {
+        width: 206px;
+        height: 84px;
+        text-align: left;
+
+        color: var(--pure-white, #FFF);
+        /* Body S */
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+    }
+}
+
+.inputBmi__height span {
+    position: absolute;
+    left: 185px;
+    top: 193px;
+    color: var(--blue, #345FF6);
+
+    /* Heading M */
+    font-family: $inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.inputBmi__weight span {
+    position: absolute;
+    right: 110px;
+    top: 193px;
+    color: var(--blue, #345FF6);
+
+    /* Heading M */
+    font-family: $inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.bmi__input {
+    color: var(--gunmetal, #253347);
+        /* Heading M */
+        font-family: $inter;
+        
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -1.2px;
+}
+
+.st-weight span{
+    position: absolute;
+    top: 293px;
+
+}
+
+.lbs-weight span {
+    position: absolute;
+    top: 293px;
+}
+
+.bmiResult__start {
+    margin-top: 62px;
+    margin-left: 32px;
+    width: 450px;
+    height: 80px;
+    margin-top: 62px;
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px 999px 999px 16px;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+}
+
+.bmiResult_title {
+    width: 436px;
+    height: 29px;
+    text-align: left;
+    color: var(--pure-white, #FFF);
+    /* Heading M */
+    font-family: $inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.bmiResult_text {
+    width: 436px;
+    height: 21px;
+
+    color: var(--pure-white, #FFF);
+    /* Body S */
+    font-family: $inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    text-align: left;
+}
+
+.imperial__style {
+    height: 606px;
+    
+}
+// .checkbox__metric input[type=radio]:checked {
+    
+//     width: 15px;
+//     height: 15px;
+//     background: var(--Blue);
+//     border: 1px solid var(--Blue);
+//     box-shadow: 0 0 0 8px #e1e7fe;
+//     margin: 0 6.5px 0 9.5px;
+// }
+
+
+
+
+// .checkbox__metric input[type=radio] {
+//     appearance: none;
+//     width: 31px;
+//     height: 31px;
+//     border-radius: 50%;
+//     position: relative;
+//     border: 1px solid #D8E2E7;
+//     cursor: pointer;
+// }
+
+.style__bmi {
+    margin-top: 150px;
+   
+}
+
+.metric {    
+    display: flex;
+   
+    align-items: center;
+}
+.imperial {   
+    display: flex;
+  
+    align-items: center;
+}
+.metric input[type=radio]:checked {
+    width: 15px;
+    height: 15px;
+    background: blue;
+    border: 1px solid blue;
+    box-shadow: 0 0 0 8px #e1e7fe;
+    margin: 0 6.5px 0 9.5px;
+}
+.metric input[type=radio] {
+    appearance: none;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #D8E2E7;
+    cursor: pointer;
+}
+
+.imperial input[type=radio]:checked {
+    width: 15px;
+    height: 15px;
+    background: blue;
+    border: 1px solid blue;
+    box-shadow: 0 0 0 8px #e1e7fe;
+    margin: 0 6.5px 0 9.5px;
+}
+.imperial input[type=radio] {
+    appearance: none;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #D8E2E7;
+    cursor: pointer;
+}
+.metric span,
+.imperial span {
+  width: 70px; 
+  display: inline-block; 
+}
+
+
+@media screen and (max-width: 1400px) {
+    .hero {
+        &__container {
+            width: 100%;
+        }
+        &__wrapper {
+            display: block;
+        }
+    }
+  }
