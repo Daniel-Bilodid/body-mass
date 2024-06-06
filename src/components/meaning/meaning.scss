@@ -82,3 +82,46 @@
     }
   }
 }
+@media screen and (max-width: 760px) {
+  .meaning {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 200px;
+    }
+
+    &__info {
+      &-title {
+        margin-top: 128px;
+        width: 358px;
+        height: 70px;
+        font-size: 32px;
+      }
+      &-text {
+        width: 328px;
+        height: 240px;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 32px;
+      }
+    }
+  }
+  .metric {
+    margin-right: 24px;
+  }
+  .inputBmi {
+    &__wrapper {
+      margin-left: 24px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .bmiResult {
+    &__start {
+      width: 280px;
+      height: 257px;
+      border-radius: 16px;
+    }
+  }
+}

@@ -427,3 +427,78 @@
     }
   }
 }
+
+@media screen and (max-width: 760px) {
+  .hero {
+    &__sub {
+      width: 327px;
+      height: 159px;
+      font-size: 48px;
+    }
+    &__text {
+      width: 327px;
+      height: 144px;
+      font-size: 16px;
+    }
+
+    &__calculator {
+      width: 328px;
+      height: 649px;
+    }
+  }
+
+  .metric {
+    margin-right: 24px;
+  }
+  .inputBmi {
+    &__wrapper {
+      margin-left: 24px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__weight {
+      &-text {
+        margin-top: 16px;
+      }
+    }
+  }
+  .bmiStart__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bmiResult {
+    width: 280px;
+    height: 257px;
+    border-radius: 16px;
+    margin: 0;
+    padding: 0;
+    margin-top: 140px;
+    margin-left: 24px;
+
+    &_text {
+      width: 216px;
+      height: 84px;
+      margin: 0 auto;
+    }
+
+    &_title {
+      width: 216px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    &__start {
+      width: 280px;
+      height: 257px;
+      border-radius: 16px;
+      margin: 0;
+      padding: 0;
+      margin-top: 140px;
+      margin-left: 24px;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}

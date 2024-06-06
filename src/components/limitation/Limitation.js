@@ -17,7 +17,7 @@ const Limitation = () => {
             may not be beneficial to use.
           </div>
         </div>
-        <div className="limitation__card">
+        <div className="limitation__card limitation__card-adaptive">
           <div className="limitation__card-wrapper">
             <img src={gender} alt="gender" />
             <span>Gender</span>
@@ -82,6 +82,18 @@ const Limitation = () => {
             age. Consequently, a child's age and gender are considered when
             evaluating their BMI.
           </div>
+        </div>
+      </div>
+
+      <div className="limitation__card limitation__card-tablet">
+        <div className="limitation__card-wrapper">
+          <img src={gender} alt="gender" />
+          <span>Gender</span>
+        </div>
+        <div className="limitation__card-text">
+          The development and body fat composition of girls and boys vary with
+          age. Consequently, a child's age and gender are considered when
+          evaluating their BMI.
         </div>
       </div>
     </div>
