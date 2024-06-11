@@ -88,38 +88,50 @@ const Hero = () => {
 
   useEffect(() => {
     let res = 0;
-
     let status = "";
-    let valueH = value / 100;
-    const min = Math.round(18.5 * valueH * valueH);
-    const max = Math.round(24.9 * valueH * valueH);
 
     if (
-      value !== null &&
-      valueW !== null &&
-      value >= 100 &&
-      valueW >= 10 &&
-      value < 250 &&
-      valueW < 250
+      ft !== null &&
+      inc !== null &&
+      st !== null &&
+      lbs !== null &&
+      ft >= 3 &&
+      ft < 9 &&
+      inc >= 0 &&
+      inc < 12 &&
+      st >= 0 &&
+      st < 28 &&
+      lbs >= 0 &&
+      lbs < 700
     ) {
-      res = (valueW / ((value / 100) * (value / 100))).toFixed(2);
+      let heightInInches = ft * 12 + inc;
+      let weightInPounds = st * 224 + lbs;
+      let bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
+      console.log(heightInInches);
+      console.log(weightInPounds);
+      console.log(bmi);
+      res = bmi;
 
-      if (+res < 18.5) {
+      if (res < 18.5) {
         status = "Underweight";
-      } else if (+res < 24.9) {
+      } else if (res < 24.9) {
         status = "Healthy weight";
-      } else if (+res < 29.9) {
+      } else if (res < 29.9) {
         status = "Overweight";
       } else {
         status = "Obese";
       }
+
+      // Предположим, что min и max предварительно определены
+      let min = 18;
+      let max = 25;
 
       setBmiResult(
         <>
           <div className={`bmiResult`}>
             <div className="bmiResult__wrapper">
               <div className="bmiResult__title">
-                Your BMI is... <span>{res}</span>
+                Your BMI is... <span>{res.toFixed(2)}</span>
               </div>
               <div className="bmiResult__text">
                 Your BMI suggests you’re a <span>{status}</span>. Your ideal

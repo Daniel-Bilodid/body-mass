@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+
   &__logo {
     display: flex;
     justify-content: left;
@@ -210,7 +210,7 @@
 
 .inputBmi__height span {
   position: absolute;
-  left: 185px;
+  left: 208px;
   top: 193px;
   color: var(--blue, #345ff6);
 
@@ -225,7 +225,7 @@
 
 .inputBmi__weight span {
   position: absolute;
-  right: 110px;
+  right: 65px;
   top: 193px;
   color: var(--blue, #345ff6);
 
