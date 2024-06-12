@@ -81,13 +81,15 @@
   }
   &__holder {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 32px;
     margin-left: 140px;
+    gap: 32px;
   }
   &__vector {
     width: 100px;
     margin-left: 138px;
+    margin-right: 279px;
   }
   &__footer {
     margin-top: 24px;

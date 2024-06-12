@@ -90,6 +90,11 @@ const Hero = () => {
     let res = 0;
     let status = "";
 
+    let ftNum = parseInt(ft, 10);
+    let incNum = parseInt(inc, 10);
+    let stNum = parseInt(st, 10);
+    let lbsNum = parseInt(lbs, 10);
+
     if (
       ft !== null &&
       inc !== null &&
@@ -104,12 +109,12 @@ const Hero = () => {
       lbs >= 0 &&
       lbs < 700
     ) {
-      let heightInInches = ft * 12 + inc;
-      let weightInPounds = st * 224 + lbs;
+      let heightInInches = ftNum * 12 + incNum;
+
+      let weightInPounds = stNum * 14 + lbsNum;
+
       let bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
-      console.log(heightInInches);
-      console.log(weightInPounds);
-      console.log(bmi);
+
       res = bmi;
 
       if (res < 18.5) {
@@ -122,7 +127,6 @@ const Hero = () => {
         status = "Obese";
       }
 
-      // Предположим, что min и max предварительно определены
       let min = 18;
       let max = 25;
 
@@ -156,6 +160,7 @@ const Hero = () => {
       );
     }
   }, [ft, inc, st, lbs]);
+
   let [view, setView] = useState(
     <>
       <div className="inputBmi__wrapper">
@@ -196,17 +201,17 @@ const Hero = () => {
       (view = (
         <>
           <div className="inputBmi">
-            <div className="inputBmi__wrapper">
-              <div className="inputBmi__height">
+            <div className="inputBmi__wrapper imperial__wrapper">
+              <div className="inputBmi__height ">
                 <div className="inputBmi__height-text">Height</div>
 
                 <input
                   type="text"
-                  className="bmi__input"
+                  className="bmi__imperial"
                   placeholder="0"
                   onChange={getInputDataFt}
                 />
-                <span>ft</span>
+                <span className="bmi__ft">ft</span>
               </div>
 
               <div className="inputBmi__weight">
@@ -214,27 +219,27 @@ const Hero = () => {
 
                 <input
                   type="text"
-                  className="bmi__input"
+                  className="bmi__imperial"
                   placeholder="0"
                   onChange={getInputDataInc}
                 />
-                <span>in</span>
+                <span className="bmi__in">in</span>
               </div>
             </div>
           </div>
 
           <div className="inputBmi">
-            <div className="inputBmi__wrapper">
+            <div className="inputBmi__wrapper imperial__wrapper">
               <div className="inputBmi__height st-weight">
                 <div className="inputBmi__height-text">Weight</div>
 
                 <input
                   type="text"
-                  className="bmi__input"
+                  className="bmi__imperial"
                   placeholder="0"
                   onChange={getInputDataSt}
                 />
-                <span>st</span>
+                <span className="bmi__st">st</span>
               </div>
 
               <div className="inputBmi__weight lbs-weight">
@@ -242,11 +247,11 @@ const Hero = () => {
 
                 <input
                   type="text"
-                  className="bmi__input"
+                  className="bmi__imperial"
                   placeholder="0"
                   onChange={getInputDataLbs}
                 />
-                <span>lbs</span>
+                <span className="bmi__lbs">lbs</span>
               </div>
             </div>
           </div>

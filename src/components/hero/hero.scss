@@ -248,6 +248,16 @@
   line-height: normal;
   letter-spacing: -1.2px;
 }
+.bmi__imperial {
+  color: var(--gunmetal, #253347);
+  /* Heading M */
+  font-family: $inter;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
 
 .st-weight span {
   position: absolute;
@@ -386,6 +396,7 @@
   .hero {
     &__calculator {
       right: 0;
+      top: 95% !important;
     }
   }
 }
@@ -429,6 +440,22 @@
 }
 
 @media screen and (max-width: 760px) {
+  .bmi__imperial {
+    width: 70px !important;
+  }
+
+  .imperial__wrapper {
+    margin-left: 0 !important;
+    flex-direction: row !important;
+    span {
+      display: none;
+    }
+  }
+
+  .inputBmi__weight span {
+    top: 288px;
+    right: 89px;
+  }
   .hero {
     &__sub {
       width: 327px;
